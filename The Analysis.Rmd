@@ -1,0 +1,941 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("Analyzing Federal Reserve Annual Reports - A Text Analysis.R")
+```
+
+<body style="background-color:#E2F7F6;">
+<center>
+# FED Annual Reports: A Simple Text Analysis 
+</center>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+### The aim of this project is to show the frequencies of the certain keywords in the annual reports of Federal Reserve between the years 1995 and 2018. The project identifies the most popular words year by year after excluding the unnecessary words that give no information on its own. Moreover, the project includes many visualisations.
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+## I - Year by Year Inspection:{.tabset .tabset-fade}
+
+
+<br>
+<br>
+
+### 1995{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_1995)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_1995,15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+### 1996{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_1996)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_1996, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+### 1997{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_1997)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_1997, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 1998{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_1998)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_1998, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 1999{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_1999)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_1999, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2000{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2000)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2000, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+### 2001{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2001)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2001, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2002{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2002)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2002, 15)
+```
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+### 2003{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2003)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2003, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2004{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2004)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2004, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2005{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2005)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2005, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2006{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2006)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2006, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2007{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2007)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2007, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2008{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2008)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2008, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2009{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2009)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2009, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2010{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2010)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2010, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2011{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2011)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2011, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+### 2012{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2012)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2012, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2013{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2013)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2013, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2014{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2014)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2014, 15)
+```
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+
+### 2015{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2015)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2015, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2016{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2016)
+```
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2016, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+
+### 2017{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2017)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2017, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+### 2018{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+plot_popular_words(popular_2018)
+```
+
+
+
+
+<br>
+<hr>
+<center><h3>Most Popular 15 words: </h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "105%"}
+head(popular_2018, 15)
+```
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+  
+  
+## II - Word Inspections:{.tabset .tabset-fade}
+
+
+<br>
+<br>
+
+### Growth{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("growth")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "growth")
+```
+
+### Inflation{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("inflation")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "inflation")
+```
+
+### Unemployment{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("unemployment")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "unemployment")
+```
+
+### Regulation{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("regulation")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "regulation")
+```
+
+### Institutions{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("institutions")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "institutions")
+```
+
+### Production{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("production")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "production")
+```
+
+### Productivity{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("productivity")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "productivity")
+```
+
+
+### Crisis{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("crisis")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "crisis")
+```
+
+
+### Inequality{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("inequality")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "inequality")
+```
+
+
+
+### Population{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("population")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "population")
+```
+
+
+
+### Green{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("green")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "green")
+```
+
+
+### Transfer{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("transfer")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "transfer")
+```
+
+
+### Energy{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("energy")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "energy")
+```
+
+### Credit{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("credit")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "credit")
+```
+
+### Capital{.tabset .tabset-fade}
+
+```{r, warning = FALSE, echo = FALSE, fig.height = 10, fig.width = 15}
+graph_word("capital")
+```
+
+
+<br>
+<hr>
+<center><h3>In Detail:</h3></center>
+<br>
+
+
+```{r, warning = FALSE, echo = FALSE, out.width = "150%"}
+find_word(Report_List, "capital")
+```
